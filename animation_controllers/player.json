@@ -1,0 +1,101 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+    "controller.animation.walk": {
+      "states": {
+        "default": {
+          "transitions": [ { "walk": "(1.0)" } ],
+          "on_exit": [ "/function start" ]
+        },
+        "walk": {
+          "transitions": [ { "default": "(1.0)" } ],
+          "on_exit": [ "/function start" ]
+        }
+      }
+    },
+    "controller.animation.cmd": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd":"query.get_equipped_item_name == 'cmd' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd" ]
+        },
+        "cmd": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd1": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd1":"query.get_equipped_item_name == 'cmd1' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd1" ]
+        },
+        "cmd1": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd1' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd2": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd2":"query.get_equipped_item_name == 'cmd2' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd2" ]
+        },
+        "cmd2": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd2' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd3": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd3":"query.get_equipped_item_name == 'cmd3' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd3" ]
+        },
+        "cmd3": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd3' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd4": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd4":"query.get_equipped_item_name == 'cmd4' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd4" ]
+        },
+        "cmd4": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd4' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd5": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd5":"query.get_equipped_item_name == 'cmd5' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd5" ]
+        },
+        "cmd5": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd5' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    },
+    "controller.animation.cmd6": {
+      "states": {
+        "default": {
+          "transitions": [ { "cmd6":"query.get_equipped_item_name == 'cmd6' && query.is_sneaking" } ],
+          "on_exit": [ "/function cmd6" ]
+        },
+        "cmd6": {
+          "transitions": [ {"default":"query.get_equipped_item_name == 'cmd6' && !query.is_sneaking"} ],
+          "on_exit": [ "" ]
+        }
+      }
+    }
+  }
+}
